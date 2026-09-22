@@ -1,0 +1,74 @@
+Finding / Searching Pattern in DSA
+
+Whenever a question asks:
+
+“Find whether something exists”, “check if something is present”, “find the first occurrence”, or “if not found, return/print something”
+
+you usually need a way to remember whether you found it or not.
+
+There are 2 common approaches:
+
+1. Use a separate variable
+
+Example:
+
+int index = -1;
+-1 → not found yet
+When found:
+index = i;
+
+Then:
+
+if (index != -1) {
+    // found
+} else {
+    // not found
+}
+
+Common for: finding an index/position.
+
+2. Use a Boolean variable
+boolean found = false;
+
+Initially:
+
+false → haven't found it
+
+When found:
+
+found = true;
+
+Then:
+
+if (found) {
+    // found
+} else {
+    // not found
+}
+
+Common for: checking only whether something exists.
+
+🧠 DSA Memory Trick
+Question asks...	Useful variable
+"Does it exist?"	boolean found
+"Was it found?"	boolean found
+"Find its index"	int index = -1
+"Find its position"	int index = -1
+"Find first occurrence"	int index = -1 OR boolean found
+"Find maximum/minimum"	int max/min
+"Count occurrences"	int count = 0
+
+boolean found = false;
+
+for (...) {
+    if (condition) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    // found
+} else {
+    // not found
+}
