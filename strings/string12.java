@@ -9,7 +9,7 @@ public class string12 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string:");
         String string = sc.nextLine();
-        System.out.println("enter the chracter u wanna delete: ");
+        System.out.println("enter the character u wanna delete: ");
         char asterisck = sc.next().charAt(0);
   
 
